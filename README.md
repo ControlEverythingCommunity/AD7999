@@ -27,17 +27,6 @@ Run the java program.
 $> pi4j AD7999
 ```
 
-## Python
-Download and install smbus library on Raspberry pi. Steps to install smbus are provided at:
-
-https://pypi.python.org/pypi/smbus-cffi/0.5.1
-
-Download (or git pull) the code in pi. Run the program.
-
-```cpp
-$> python AD7999.py
-```
-
 ## Arduino
 Download and install Arduino Software (IDE) on your machine. Steps to install Arduino are provided at:
 
