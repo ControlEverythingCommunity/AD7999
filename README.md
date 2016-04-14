@@ -58,11 +58,11 @@ Download (or git pull) the code in Beaglebone Black.
 
 Compile the c program.
 ```cpp
-$>gcc SI7050.c -o SI7050
+$>gcc AD7999.c -o AD7999
 ```
 Run the c program.
 ```cpp
-$>./SI7050
+$>./AD7999
 ```
 
 #####The code output is digital value of an analog input.
