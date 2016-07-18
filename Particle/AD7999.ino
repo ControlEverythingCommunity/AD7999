@@ -54,5 +54,5 @@ void loop()
     int raw_adc = (((data[0] & 0x0F) * 256) + (data[1] & 0xF0)) / 16 ;
     
     // Output data to serial monitor
-    Particle.publish("Raw Value of the source is : ", String(raw_adc));
+    Particle.publish("Digital Value of Analog Source is : ", String(raw_adc));
 }
