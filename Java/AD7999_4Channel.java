@@ -25,14 +25,14 @@ public class AD7999_4Channel
 
 		// Read 2 bytes of data
 		// raw_adc msb, raw_adc lsb
-		byte[] data = new byte[2];
-		device.read(data, 0, 2);
+		byte[] data1 = new byte[2];
+		device.read(data1, 0, 2);
 		
 		// Convert the data to 8-bits
-		int raw_adc = (((data[0] & 0x0F) * 256) + (data[1] & 0xF0)) / 16;
+		int raw_adc1 = (((data1[0] & 0x0F) * 256) + (data1[1] & 0xF0)) / 16;
 
 		// Output data to screen
-		System.out.printf("Digital value of analog input on Channel-1: %d %n", raw_adc);
+		System.out.printf("Digital value of analog input on Channel-1: %d %n", raw_adc1);
 
 		// Send configuration command
 		// Channel-2, filter enabled
@@ -41,14 +41,14 @@ public class AD7999_4Channel
 
 		// Read 2 bytes of data
 		// raw_adc msb, raw_adc lsb
-		byte[] data = new byte[2];
-		device.read(data, 0, 2);
+		byte[] data2 = new byte[2];
+		device.read(data2, 0, 2);
 		
 		// Convert the data to 8-bits
-		int raw_adc = (((data[0] & 0x0F) * 256) + (data[1] & 0xF0)) / 16;
+		int raw_adc2 = (((data2[0] & 0x0F) * 256) + (data2[1] & 0xF0)) / 16;
 
 		// Output data to screen
-		System.out.printf("Digital value of analog input on Channel-2: %d %n", raw_adc);
+		System.out.printf("Digital value of analog input on Channel-2: %d %n", raw_adc2);
 
 		// Send configuration command
 		// Channel-3, filter enabled
@@ -57,14 +57,14 @@ public class AD7999_4Channel
 
 		// Read 2 bytes of data
 		// raw_adc msb, raw_adc lsb
-		byte[] data = new byte[2];
-		device.read(data, 0, 2);
+		byte[] data3 = new byte[2];
+		device.read(data3, 0, 2);
 		
 		// Convert the data to 8-bits
-		int raw_adc = (((data[0] & 0x0F) * 256) + (data[1] & 0xF0)) / 16;
+		int raw_adc3 = (((data3[0] & 0x0F) * 256) + (data3[1] & 0xF0)) / 16;
 
 		// Output data to screen
-		System.out.printf("Digital value of analog input on Channel-3: %d %n", raw_adc);
+		System.out.printf("Digital value of analog input on Channel-3: %d %n", raw_adc3);
 
 		// Send configuration command
 		// Channel-4, filter enabled
@@ -73,14 +73,13 @@ public class AD7999_4Channel
 
 		// Read 2 bytes of data
 		// raw_adc msb, raw_adc lsb
-		byte[] data = new byte[2];
-		device.read(data, 0, 2);
+		byte[] data4 = new byte[2];
+		device.read(data4, 0, 2);
 		
 		// Convert the data to 8-bits
-		int raw_adc = (((data[0] & 0x0F) * 256) + (data[1] & 0xF0)) / 16;
+		int raw_adc4 = (((data4[0] & 0x0F) * 256) + (data4[1] & 0xF0)) / 16;
 
 		// Output data to screen
-		System.out.printf("Digital value of analog input on Channel-4: %d %n", raw_adc);
+		System.out.printf("Digital value of analog input on Channel-4: %d %n", raw_adc4);
 	}
-}
 }
