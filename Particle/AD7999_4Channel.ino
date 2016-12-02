@@ -53,9 +53,9 @@ void loop()
   // Convert the data
   int raw_adc = (((data[0] & 0x0F) * 256) + (data[1] & 0xF0)) / 16 ;
 
-  // Output data to serial monitor
-  Particle.publish("Digital Value of Analog Source on Channel 1 : ", String(raw_adc));
-  delay(500);
+  // Output data to console
+  Particle.publish("Digital Value on Channel 1 : ", String(raw_adc));
+  delay(1000);
 
   // Start I2C Transmission
   Wire.beginTransmission(Addr);
@@ -85,9 +85,9 @@ void loop()
   // Convert the data
   raw_adc = (((data[0] & 0x0F) * 256) + (data[1] & 0xF0)) / 16 ;
 
-  // Output data to serial monitor
-  Particle.publish("Digital Value of Analog Source on Channel 2 : ", String(raw_adc));
-  delay(500);
+  // Output data to console
+  Particle.publish("Digital Value on Channel 2 : ", String(raw_adc));
+  delay(1000);
 
   // Start I2C Transmission
   Wire.beginTransmission(Addr);
@@ -117,9 +117,9 @@ void loop()
   // Convert the data
   raw_adc = (((data[0] & 0x0F) * 256) + (data[1] & 0xF0)) / 16 ;
 
-  // Output data to serial monitor
-  Particle.publish("Digital Value of Analog Source on Channel 3 : ", String(raw_adc));
-  delay(500);
+  // Output data to console
+  Particle.publish("Digital Value on Channel 3 : ", String(raw_adc));
+  delay(1000);
 
   // Start I2C Transmission
   Wire.beginTransmission(Addr);
@@ -149,7 +149,7 @@ void loop()
   // Convert the data
   raw_adc = (((data[0] & 0x0F) * 256) + (data[1] & 0xF0)) / 16 ;
 
-  // Output data to serial monitor
-  Particle.publish("Digital Value of Analog Source on Channel 4 : ", String(raw_adc));
-  delay(500);
+  // Output data to console
+  Particle.publish("Digital Value on Channel 4 : ", String(raw_adc));
+  delay(1000);
 }
